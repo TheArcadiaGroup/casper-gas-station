@@ -2,7 +2,7 @@ prepare:
 	rustup target add wasm32-unknown-unknown
 
 build-contract:
-	cargo build --release -p contract --target wasm32-unknown-unknown
+	cargo build --release -p gas-granter --target wasm32-unknown-unknown
 
 test-only:
 	cargo test -p tests
