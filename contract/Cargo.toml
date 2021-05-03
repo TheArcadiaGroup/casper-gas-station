@@ -1,0 +1,21 @@
+[package]
+name = "gas-granter"
+version = "0.1.0"
+authors = ["Yassine Amor <yassine@arcadiamgroup.com>"]
+edition = "2018"
+
+[dependencies]
+casper-contract = "1.1.1"
+casper-types = "1.1.1"
+casperlabs_contract_macro = "0.1.0"
+ring = "0.16.20"
+
+[[bin]]
+name = "gas-granter"
+path = "src/main.rs"
+bench = false
+doctest = false
+test = false
+
+[features]
+default = ["casper-contract/std", "casper-types/std"]
